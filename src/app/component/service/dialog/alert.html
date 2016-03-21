@@ -1,0 +1,14 @@
+<div class="modal-header">
+  <button type="button" class="close" style="margin-top: -10px;" ng-click="$close();">&times;</button>
+  <h4 class="modal-title" translate="{{ code + '.alert.title' }}" translate-values="{{ params }}"></h4>
+</div>
+<div class="modal-body">
+  <div class="files-modal">
+    <i class="fa fa-exclamation-triangle pull-left"></i>
+
+    <p class="modal-message" translate="{{ code + '.alert.hint'}}" translate-values="{{ params }}"></p>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" ng-click="$close()" translate="alert.ok">OK</button>
+</div>

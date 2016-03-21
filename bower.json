@@ -1,0 +1,58 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "1.4.7",
+    "angular-bootstrap": "0.13.4",
+    "angular-busy": "~4.1.3",
+    "angular-cookies": "1.4.7",
+    "angular-messages": "1.4.7",
+    "angular-sanitize": "1.4.7",
+    "angular-touch": "1.4.7",
+    "angular-translate": "2.7.2",
+    "angular-translate-handler-log": "2.7.2",
+    "angular-translate-interpolation-messageformat": "2.7.2",
+    "angular-translate-loader-static-files": "2.7.2",
+    "angular-truncate-2": "0.4.1",
+    "angular-ui-router": "0.2.15",
+    "angular-validation-match": "1.6.0",
+    "bootstrap-sass-official": "3.3.5",
+    "forge": "0.6.34",
+    "lodash": "3.10.1",
+    "angular-growl-v2": "0.7.5",
+    "ngstorage": "0.3.9",
+    "restangular": "1.5.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.4.7"
+  },
+  "overrides": {
+    "bootstrap-sass-official": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/javascripts/bootstrap.js",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "messageformat": {
+      "main": [
+        "messageformat.js",
+        "locale/ru.js"
+      ]
+    },
+    "forge": {
+      "main": [
+        "js/forge.js",
+        "js/util.js",
+        "js/sha512.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "1.4.7"
+  }
+}

@@ -1,0 +1,53 @@
+<div class="login-content">
+  <div class="card card-container" cg-busy="login.pending">
+
+    <form class="public-form login" name="loginForm" ng-submit="login.submit(loginForm)" novalidate>
+
+      <div class="form-group"
+           ng-class="{ 'has-error': (loginForm.login.$touched || loginForm.login.$dirty) && loginForm.login.$invalid }">
+        <div class="input-group">
+          <input type="text" class="form-control" id="login" name="login" translate
+                 translate-attr-placeholder="public.login.username.placeholder" tabindex="1"
+                 ng-model="login.login" ng-model-options="{ updateOn: 'blur' }"
+                 required manual-validity="login" maxlength="255">
+        </div>
+
+        <div class="login-validation" ng-messages="loginForm.login.$error"
+             ng-if="loginForm.login.$touched || loginForm.login.$dirty">
+          <p class="validation-text" ng-message="required"><span
+            translate="public.login.username.validation.required"></span></p>
+
+          <p class="validation-text" ng-message="login"><span
+            translate="public.login.username.validation.login"></span></p>
+        </div>
+      </div>
+
+      <div class="form-group"
+           ng-class="{ 'has-error': (loginForm.password.$touched || loginForm.password.$dirty) && loginForm.password.$invalid }">
+        <div class="input-group">
+          <input type="password" class="form-control" id="password" name="password" translate
+                 translate-attr-placeholder="public.login.password.placeholder" tabindex="2"
+                 ng-model="login.password" ng-model-options="{ updateOn: 'blur' }"
+                 required manual-validity="password" maxlength="40">
+        </div>
+
+        <div class="password-validation" ng-messages="loginForm.password.$error"
+             ng-if="loginForm.password.$touched || loginForm.password.$dirty">
+          <p class="validation-text" ng-message="required"><span
+            translate="public.login.password.validation.required"></span></p>
+
+          <p class="validation-text" ng-message="password"><span
+            translate="public.login.password.validation.password"></span></p>
+        </div>
+      </div>
+
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">
+        <span translate="public.login.btn"></span>
+      </button>
+
+    </form>
+    <!-- /form -->
+  </div>
+
+</div>

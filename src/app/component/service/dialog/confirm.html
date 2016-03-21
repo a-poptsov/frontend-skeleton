@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <button type="button" class="close" style="margin-top: -10px;" ng-click="$dismiss('cancel')">&times;</button>
+  <h4 class="modal-title" translate="{{ code + '.confirm.title' }}" translate-values="{{ params }}"></h4>
+</div>
+<div class="modal-body">
+  <div class="files-modal">
+    <i class="fa fa-exclamation-triangle pull-left"></i>
+
+    <p class="modal-message" translate="{{ code + '.confirm.hint'}}" translate-values="{{ params }}"></p>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary cancel-btn" ng-click="$dismiss('cancel')">
+    <span translate="{{ params.cancelButton || 'confirm.cancel' }}"></span>
+  </button>
+  <button type="button" class="btn btn-primary ok-btn" ng-click="$close('ok')">
+    <span translate="{{ params.okButton || 'confirm.ok' }}"></span>
+  </button>
+</div>

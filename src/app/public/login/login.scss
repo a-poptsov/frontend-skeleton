@@ -1,0 +1,50 @@
+.public-content .login-content {
+  .card {
+    .public-form {
+      .forgot-password {
+        display: block;
+        height: 20px;
+        text-decoration: none;
+        color: #5a5a5a;
+      }
+      .social-log-block {
+        margin: 24px 0 9px;
+        font-size: 22px;
+        color: #34225c;
+        li {
+          padding: 0;
+          a {
+            width: 67px;
+            height: 67px;
+            border-radius: 67px;
+            margin: 20px 22px 30px;
+            i {
+              display: block;
+              width: 35px;
+              height: 35px;
+              margin:18px auto 0;
+              }
+            &.facebook-log {
+              background: #3d5a9c;
+              &:hover {
+                background: #385BAC;
+              }
+              i {
+                background-position: 0 -70px;
+              }
+            }
+            &.instagram-log {
+              background: #517fa4;
+              &:hover {
+                background: #4583B6;
+              }
+              i {
+                background-position: 0 -105px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div class="error-content">
+  <a ui-sref="home" class="link">
+    <img src="/assets/img/logo.png" alt="logo">
+  </a>
+
+  <div class="font-semibold">
+    <div class="error-img-wrapper">
+      <img class="error-img" src="/assets/img/error.jpg" alt="error">
+      <a class="home-link" ui-sref="home" translate="public.error.home"></a>
+    </div>
+    <h2 class="accent-text font-semibold" translate="public.error.sorry"></h2>
+
+    <p>
+      <span translate="public.error.an_error_has_occurred"></span>
+      <br/>
+      <span ng-if="error.status === 404">
+        <span translate="public.error.page_is_not_found"></span>
+        <br/>
+        <a class="link" ui-sref="home" translate="public.error.back_to_home"></a>
+      </span>
+      <span ng-if="error.status === 403">
+        <span translate="public.error.not_authorized"></span>
+        <br/>
+        <a class="link" ui-sref="home" translate="public.error.back_to_home"></a>
+      </span>
+      <span ng-if="error.status !== 404 && error.status !== 403">
+        <span translate="public.error.server_error"></span>
+      </span>
+    </p>
+  </div>
+</div>
